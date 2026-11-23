@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: belal-portfolio
+    restart: unless-stopped
+    ports:
+      - "8081:80"
